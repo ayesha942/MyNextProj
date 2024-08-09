@@ -1,0 +1,43 @@
+.navbar {
+    background-color: black; /* Black background */
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .logo {
+    color: white; /* White text color for visibility */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+  }
+  
+  .navLink {
+    color: white; /* White text color for visibility */
+    text-decoration: none; /* Remove underline */
+   
+  }
+  
+  .navLink:hover {
+    text-decoration: none; /* Ensure no underline on hover */
+    cursor: pointer;
+  }
+  
+  .logoutButton {
+    background-color: aqua;
+    color: black; /* Black text color for better contrast */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .logoutButton:hover {
+    background-color: #c00; /* Dark red on hover */
+  }
+  

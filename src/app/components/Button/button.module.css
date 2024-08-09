@@ -1,0 +1,8 @@
+.container
+{
+    padding: 24px;
+    background-color: #53c28b;
+    cursor: pointer;
+    max-width: max-content;
+    color: white;
+}

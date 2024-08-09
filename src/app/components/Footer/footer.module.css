@@ -1,0 +1,17 @@
+.container
+{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.socials
+{
+    display: flex;
+    align-items: center;
+    gap: 10;
+}
+.icons
+{
+    cursor: pointer;
+}

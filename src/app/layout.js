@@ -1,5 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Contact from "./Contact/page";
+import Navbar from "./components/Navbar/page";
+import Footer from "./components/Footer/page";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +15,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </head>
+      <body className={inter.className}>
+        <ThemeProvider>
+        <div className="container"> {/* Ensure your container div wraps the content */}
+          <Navbar />
+          <main>
+            {children}
+          </main>
+          <Footer />
+        </div>
+                </ThemeProvider>
+
+      </body>
     </html>
   );
 }
