@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./page.module.css";
+import styles from "./post.module.css"
 import Image from "next/image";
 
 async function getData(id) {
@@ -47,3 +47,4 @@ const BlogPost = async ({ params }) => {
 };
 
 export default BlogPost;
+//dn

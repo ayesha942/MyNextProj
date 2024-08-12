@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './button.module.css';
 import Link from 'next/link';
 
-function Button({ text, url }) {
+// Set default values for props
+const Button = ({ text = 'Default Text', url = '#' }) => {
   return (
     <div className={styles.container}>
       <Link href={url} passHref>
@@ -10,6 +11,6 @@ function Button({ text, url }) {
       </Link>
     </div>
   );
-}
+};
 
 export default Button;

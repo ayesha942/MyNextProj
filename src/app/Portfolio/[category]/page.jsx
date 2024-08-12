@@ -1,7 +1,7 @@
 
-import { items } from '../../../data'; // Ensure this path is correct
+import { items } from './data'; // Ensure this path is correct
 import styles from './page.module.css';
-import Button from '@/components/Button/page'; // Ensure this path is correct
+import Button from '@/app/components/Button/page';// Ensure this path is correct
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
